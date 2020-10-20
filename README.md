@@ -3,7 +3,7 @@ Model the Furuta Pendulum with Simulink and Matlab.
 
 ## System description
 To compute the mathematical model of the pendulum, we refer to the figure below
-<img src="Furuta_pendulum.jpg" />
+<img src="images/Furuta_pendulum.jpg" />
 
 ## Parameters in callbacks
 The parameters measured in laboratory are:
@@ -42,10 +42,19 @@ with
 
 implemented as
 
-<img src='parameters.png' />
+<img src='images/parameters.png' />
 
-## Explicit variables
+## Explicit angles
 <img src="https://latex.codecogs.com/gif.latex?\frac{d}{dt}&space;\dot{\varphi}&space;=&space;\dot\varphi" title="\frac{d}{dt} \dot{\varphi} = \dot\varphi" />
 <img src="https://latex.codecogs.com/gif.latex?\frac{d}{dt}&space;\dot{\varphi}&space;=&space;\frac{\beta\gamma&space;s_{\vartheta}&space;\dot\vartheta^2&space;-&space;\gamma\delta&space;c_{\vartheta}&space;s_{\vartheta}&space;-&space;(2&space;\beta^2&space;c_{\vartheta}&space;s_{\vartheta})\dot\varphi\dot\vartheta&space;&plus;&space;\gamma&space;b_{\vartheta}&space;c_{\vartheta}&space;\dot&space;\vartheta&space;&plus;&space;(\beta&space;\gamma&space;c_{\vartheta}^2&space;s_{\vartheta})&space;\dot&space;\varphi^2&space;&plus;&space;\beta(\tau_\varphi&space;-&space;b_\varphi&space;\dot&space;\varphi)}{\beta(\alpha&space;&plus;&space;\beta&space;s_{\vartheta}^2)-\gamma^2&space;c_{\vartheta}^2}" title="\frac{d}{dt} \dot{\varphi} = \frac{\beta\gamma s_{\vartheta} \dot\vartheta^2 - \gamma\delta c_{\vartheta} s_{\vartheta} - (2 \beta^2 c_{\vartheta} s_{\vartheta})\dot\varphi\dot\vartheta + \gamma b_{\vartheta} c_{\vartheta} \dot \vartheta + (\beta \gamma c_{\vartheta}^2 s_{\vartheta}) \dot \varphi^2 + \beta(\tau_\varphi - b_\varphi \dot \varphi)}{\beta(\alpha + \beta s_{\vartheta}^2)-\gamma^2 c_{\vartheta}^2}" />
 <img src="https://latex.codecogs.com/gif.latex?\frac{d}{dt}\vartheta&space;=&space;\dot&space;\vartheta" title="\frac{d}{dt}\vartheta = \dot \vartheta" />
 <img src="https://latex.codecogs.com/gif.latex?\frac{d}{dt}&space;\dot&space;\vartheta&space;=&space;\frac{(\alpha&space;&plus;&space;\beta&space;s_\vartheta^2)\delta&space;s_\vartheta&space;&plus;&space;(\alpha&space;&plus;&space;\beta&space;s_\vartheta^2)&space;\beta&space;c_\vartheta&space;s_\vartheta&space;\dot\varphi^2&space;&plus;2&space;\beta\gamma&space;c_\vartheta^2&space;s_\vartheta&space;\dot&space;\varphi&space;\dot\vartheta&space;-\gamma^2&space;s_\vartheta&space;c_\vartheta&space;\dot&space;\vartheta^2&space;-&space;(\alpha&space;&plus;&space;\beta&space;s_\vartheta^2)b_\vartheta&space;\dot&space;\vartheta&space;&plus;&space;\gamma&space;c_\vartheta&space;b_\varphi&space;\dot&space;\varphi&space;-&space;\gamma&space;c_\vartheta&space;\tau_\varphi}{\beta(\alpha&space;&plus;&space;\beta&space;s_\vartheta^2)&space;-&space;\gamma^2&space;c_\vartheta^2}" title="\frac{d}{dt} \dot \vartheta = \frac{(\alpha + \beta s_\vartheta^2)\delta s_\vartheta + (\alpha + \beta s_\vartheta^2) \beta c_\vartheta s_\vartheta \dot\varphi^2 +2 \beta\gamma c_\vartheta^2 s_\vartheta \dot \varphi \dot\vartheta -\gamma^2 s_\vartheta c_\vartheta \dot \vartheta^2 - (\alpha + \beta s_\vartheta^2)b_\vartheta \dot \vartheta + \gamma c_\vartheta b_\varphi \dot \varphi - \gamma c_\vartheta \tau_\varphi}{\beta(\alpha + \beta s_\vartheta^2) - \gamma^2 c_\vartheta^2}" />
+
+the model obtained is
+
+<img src="images/model.png" />
+
+## Simulation
+Use model "furuta_check" to verify the correctness with measurements made in laboratory.
+<img src="images/sim.png" />
+
