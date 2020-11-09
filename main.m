@@ -3,7 +3,6 @@
 %%% Inizialization of Model
 load('workspace_parameters.mat'); %for masses and lengths
 x0 = zeros(4, 1);
-%x0 = [0 0 pi/20 0];
 
 %%% Run Model
 model = 'model/furuta_model.slx';
@@ -21,10 +20,23 @@ FdT;
 step(P);  
 
 %%% PID Controller
-% Gains computed with PID tuner
-Kp = -413;
-Kd = -11.3;
-Ki = -2960;
-C_pid = Kp + Ki*(1/s) + Kd*s; 
+%Gains computed with PID tuner
+Kp = -12;
+Ki = -12;
+C_pid = Kp + Ki*(1/s);
+
 W = feedback(C_pid*P, 1);
 step(W);
+
+%%% First controller to mantein theta = 0
+first_controller = 'controller/first_controller.slx';
+load_system(first_controller);
+sim(first_controller);
+
+%%% Swing-Up
+x0 = [0 0 pi 0]; %initial position in stable equilibrum point
+controller = 'controller/swing_up_controller.slx';
+load_system(controller);
+sim(controller);
+
+
