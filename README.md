@@ -54,7 +54,18 @@ the model obtained is
 
 <img src="images/model.png" />
 
-## Simulation
+## State Simulation
 Use model "furuta_check" to verify the correctness with measurements made in laboratory.
 <img src="images/sim.png" />
+
+## Transfer Function
+Linearizing around null theta angle, obtain follow function transfer,
+<img src="https://latex.codecogs.com/gif.latex?P(s)&space;=&space;\frac{\theta(s)}{\tau_\varphi&space;(s)}&space;=&space;\frac{\gamma&space;s}{(\gamma^2&space;-&space;\alpha&space;\beta)s^3&space;-&space;(b_\varphi&space;\beta&space;&plus;&space;\alpha&space;b_\vartheta)s^2&space;&plus;&space;(\alpha&space;\delta&space;-&space;b_\vartheta&space;b_\varphi)s&space;&plus;&space;b_\varphi&space;\delta}&space;\notin&space;S" title="P(s) = \frac{\theta(s)}{\tau_\varphi (s)} = \frac{\gamma s}{(\gamma^2 - \alpha \beta)s^3 - (b_\varphi \beta + \alpha b_\vartheta)s^2 + (\alpha \delta - b_\vartheta b_\varphi)s + b_\varphi \delta} \notin S" />
+
+## PID controller
+Utilizing the PID-Tuner obtain follow PID controller
+
+<img src="https://latex.codecogs.com/gif.latex?(-413)&plus;\frac{(-2960)}{s}&space;&plus;&space;(-11.3)s" title="(-413)+\frac{(-2960)}{s} + (-11.3)s" />
+
+
 
