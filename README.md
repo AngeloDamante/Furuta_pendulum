@@ -1,11 +1,14 @@
 # Furuta Pendulum
-Model the Furuta Pendulum with Simulink and Matlab.
+Model and control the Furuta Pendulum with Simulink and Matlab <a href ='https://it.mathworks.com/?s_tid=gn_logo'> R2020a </a>.
+
+<img src="images/full_system.png" />
+<img src="images/code.png" />
 
 ## System description
 To compute the mathematical model of the pendulum, we refer to the figure below
 <img src="images/Furuta_pendulum.jpg" />
 
-## Parameters in callbacks
+## Parameters of model
 The parameters measured in laboratory are:
 - pendulum mass m_p = 0.3 kg
 - pendulum length l_p = 0.205 m
@@ -65,7 +68,13 @@ Linearizing around null theta angle, obtain follow function transfer,
 ## PID controller
 Utilizing the PID-Tuner obtain follow PID controller
 
-<img src="https://latex.codecogs.com/gif.latex?(-413)&plus;\frac{(-2960)}{s}&space;&plus;&space;(-11.3)s" title="(-413)+\frac{(-2960)}{s} + (-11.3)s" />
+<img src="https://latex.codecogs.com/gif.latex?(-12)&plus;\frac{(-12)}{s}" title="(-413)+\frac{(-2960)}{s} + (-11.3)s" />
 
+and the firs controller to mantein null theta angle
 
+<img src="images/first_controller.png" />
 
+## Swing-Up
+For Swing-Up problem, the idea has been that of to introduce a wave signal for motor and a control for monitoring theta angle.  
+
+<img src = "images/swing_up_controller.png" />
