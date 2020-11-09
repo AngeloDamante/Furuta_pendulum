@@ -38,5 +38,3 @@ x0 = [0 0 pi 0]; %initial position in stable equilibrum point
 controller = 'controller/swing_up_controller.slx';
 load_system(controller);
 sim(controller);
-
-
