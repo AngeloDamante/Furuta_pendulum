@@ -78,3 +78,7 @@ and the firs controller to mantein null theta angle
 For Swing-Up problem, the idea has been that of to introduce a wave signal for motor and a control for monitoring theta angle.  
 
 <img src = "images/swing_up_controller.png" />
+
+using stateflow, implement an alternative mode of swing-up controller
+
+<img src = "images/furutaSF.png" />
