@@ -81,4 +81,5 @@ For Swing-Up problem, the idea has been that of to introduce a wave signal for m
 
 using stateflow, implement an alternative mode of swing-up controller
 
-<img src = "images/furutaSF.png" />
+<img src = "images/furutaStateflow.png" />
+<img src = "images/states.png" />
