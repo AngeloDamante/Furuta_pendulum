@@ -31,7 +31,7 @@ For frictions:
 
 This parameters are declared in callbacks of simulink model.
 
-## Equations of Motion
+## Motion Equations
 We use second species Lagrange equations
 
 <img src="https://latex.codecogs.com/gif.latex?\left\{\begin{matrix}&space;\frac{d}{dt}\frac{\partial&space;L}{\partial&space;\dot{\varphi}}&space;-&space;\frac{\partial&space;L}{\partial&space;\varphi}&space;=&space;Q_{\varphi}&space;=&space;\tau_{\varphi}&space;-&space;b_{\varphi}\dot{\varphi}\\\frac{d}{dt}\frac{\partial&space;L}{\partial&space;\dot{\vartheta}}&space;-&space;\frac{\partial&space;L}{\partial&space;\vartheta}&space;=&space;Q_{\vartheta}&space;=&space;-&space;b_{\vartheta}\dot{\vartheta}&space;\end{matrix}\right." title="\left\{\begin{matrix} \frac{d}{dt}\frac{\partial L}{\partial \dot{\varphi}} - \frac{\partial L}{\partial \varphi} = Q_{\varphi} = \tau_{\varphi} - b_{\varphi}\dot{\varphi}\\\frac{d}{dt}\frac{\partial L}{\partial \dot{\vartheta}} - \frac{\partial L}{\partial \vartheta} = Q_{\vartheta} = - b_{\vartheta}\dot{\vartheta} \end{matrix}\right." />
