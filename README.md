@@ -1,6 +1,7 @@
 # Furuta Pendulum
-Model and control the Furuta Pendulum with Simulink and Matlab <a href ='https://it.mathworks.com/?s_tid=gn_logo'> R2020a </a>.
+Modeling and controller for Furuta Pendulum with <a href ='https://it.mathworks.com/?s_tid=gn_logo'>Simulink, Matlab R2020a and Stateflow</a>.
 
+## Main and complete system
 <img src="images/full_system.png" />
 <img src="images/code.png" />
 
