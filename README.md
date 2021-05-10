@@ -7,7 +7,9 @@ Modeling and controller for Furuta Pendulum with <a href ='https://it.mathworks.
 
 ## System description
 To compute the mathematical model of the pendulum, we refer to the figure below
-<img src="images/Furuta_pendulum.jpg" />
+<p align=center>
+  <img src="images/Furuta_pendulum.jpg" />
+</p>
 
 ## Parameters of model
 The parameters measured in laboratory are:
