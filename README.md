@@ -79,7 +79,9 @@ Linearizing around null theta angle, obtain follow function transfer,
 ## PID controller
 Utilizing the PID-Tuner obtain follow PID controller
 
-<img src="https://latex.codecogs.com/gif.latex?\bg_white&space;(-12)&plus;\frac{(-12)}{s}" title="(-12)+\frac{(-12)}{s}" />
+<p align=center>
+  <img src="https://latex.codecogs.com/gif.latex?\bg_white&space;(-12)&plus;\frac{(-12)}{s}" title="(-12)+\frac{(-12)}{s}" />
+</p>
 
 and the firs controller to mantein null theta angle
 
